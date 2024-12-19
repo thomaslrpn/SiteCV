@@ -259,7 +259,54 @@ footer a {
   }
 }
 
-/* Responsive pour les petits écrans (téléphones) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .cord,
+  .comp,
+  .interet {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .experiences h2,
+  .formations h2 {
+    margin-left: 20px;
+    font-size: 1.4rem;
+  }
+
+  .experiences h3,
+  .formations h3 {
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
+
+  .experiences p,
+  .formations p {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 480px) {
   header {
     padding: 15px;
@@ -268,6 +315,7 @@ footer a {
 
   .menu {
     flex-direction: column;
+    align-items: center;
     padding: 10px;
   }
 
@@ -282,17 +330,25 @@ footer a {
     padding: 10px;
   }
 
+  .experiences h2,
+  .formations h2 {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+
   .experiences h3,
+  .formations h3 {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
   .experiences p,
-  .formations h3,
   .formations p {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
   footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 15px;
   }
 }
